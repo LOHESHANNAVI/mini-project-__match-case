@@ -43,4 +43,20 @@ for book in books.values():
     print(book)
     print(f"{book['title']} --by-- book['author']")    
 
-    
+
+
+users = [
+    {"id": 1, "username": "alice", "email": "alice@example.com"},
+    {"id": 2, "username": "bob", "email": "bob@example.com"},
+    {"id": 3, "username": "charlie", "email": "charlie@example.com"}
+]
+
+for values in users:
+
+    print(values['username'])
+    if values['username'] =="":
+        print('value empty')
+    if values['username'] !="":
+        print('ok')
+else :
+    print('end')             
