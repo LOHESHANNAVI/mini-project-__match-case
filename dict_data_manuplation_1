@@ -1,0 +1,22 @@
+car = {
+    "brand": "Tesla",
+    "model": "Model 3",
+    "specs": {
+        "range": "358 miles",
+        "battery": "82 kWh"
+    }
+}
+
+print(car['specs']['range'])
+
+for key,values in car.items():
+    print(f"{key} ===== {values}")
+    if key == "specs":
+        print(values["range"])
+
+
+for values  in car.values():
+    print(values)       
+
+for keys in car.keys():
+    print(keys)    
