@@ -1,0 +1,10 @@
+Notes for the future 
+
+notes= {}
+
+notes["link"] = "https://github.com/letspython3x/Books/blob/master/Deep%20Learning%20with%20Python.pdf"
+
+print(notes)
+
+https://github.com/letspython3x/Books/blob/master/Deep%20Learning%20with%20Python.pdf
+
