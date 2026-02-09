@@ -1,0 +1,23 @@
+import logging
+import html
+
+    
+logging.basicConfig(level=logging.INFO)
+
+
+day = "Monday"
+
+switch = {
+    "Monday": "Start of the work week!",
+    "Tuesday": "Second day!",
+    "Wednesday": "Midweek days",
+    "Thursday": "Midweek days",
+    "Friday": "Last work day!"
+}
+
+logging.info(switch.get(day, "Invalid day"))
+
+
+day = "sun"
+
+logging.info(switch.get(day, "Invalid day"))
