@@ -1,0 +1,40 @@
+import winsound
+import subprocess
+
+source = r""
+destination = r""
+
+
+try:
+    if (source !="" and  destination !="" ):
+        
+        command = [
+            "robocopy",
+            source,
+            destination,
+            "/E",
+            "/Z",
+            "/MT:16",
+            "/R:3",
+            "/W:5",
+            "/IS",
+            "/IT"
+        ]
+        result = subprocess.run(command, shell=True)
+
+        if result.returncode < 8:
+            print("Copy completed successfully")
+        else:
+            print("Copy failed with exit code:", result.returncode)
+
+
+            print("Running script...")
+    else:
+        print(f'select proper folders')            
+
+except Exception as e:
+    print(f'Error {e}')
+  
+finally:
+    winsound.MessageBeep()
+    print('Finished')
